@@ -20,7 +20,7 @@
 				      </div>
 				      <div class="modal-body">
 				        <div class="form-group">
-				        	<label for="nama_jabatan">Nama Jabatan</label>
+				        	<label for="nama_jabatan">Nama Jabata</label>
 				        	<input required type="text" name="nama_jabatan" id="nama_jabatan" class="form-control" value="<?= set_value('nama_jabatan'); ?>">
 						    <?= form_error('nama_jabatan', '<small class="form-text text-danger">', '</small>'); ?>
 				        </div>
