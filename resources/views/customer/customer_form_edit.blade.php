@@ -49,7 +49,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="card">       
+            <div class="card">
               <div class="card-body">
                 <div class="card card-info">
                   <div class="card-header">
@@ -58,32 +58,38 @@
                   <!-- /.card-header -->
                   <!-- form start -->
                   <form class="form-horizontal" action="{{'/customer/'. $editcustomer->id_customer}}" method="post">
-                    @csrf 
+                    @csrf
                     @method('PUT')
                     <div class="card-body">
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Nama customer</label>
                         <div class="col-sm-10 mb-5">
-                          <input type="text" name="nama_customer" value="{{$editcustomer->nama_customer}}" class="form-control" placeholder="customer">
+                          <input type="text" name="nama_customer" value="{{$editcustomer->nama_customer}}" class="form-control" placeholder="customer" required>
                         </div>
                         <label class="col-sm-2 col-form-label">Telepon</label>
                         <div class="col-sm-10 mb-5">
-                          <input type="text" name="telepon" value="{{$editcustomer->telepon}}" class="form-control" placeholder="customer">
+                          <input type="text" name="telepon" value="{{$editcustomer->telepon}}" class="form-control" placeholder="customer" required>
                         </div>
                         <label class="col-sm-2 col-form-label">Jenis Kelamin</label>
                         <div class="col-sm-10 mb-5">
-                                    <select class="select2" class="form-control" name="jk" value="{{$editcustomer->jk}}"style="">
-                                        <option></option>
-                                        <option>Pria</option>
-                                        <option>Wanita</option>
-                                    </select>                      
+                            <select class="form-control select2" style="width: 100%;" name="jk" id="jk" required>
+                                @if ($editcustomer->jk=='Laki-Laki')
+                                    <option selected="selected" value="Laki-Laki">Laki-Laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                @elseif ($editcustomer->jk=='Perempuan')
+                                    <option selected="selected" value="Perempuan">Perempuan</option>
+                                    <option value="Laki-Laki">Laki-Laki</option>
+                                @endif
+                            </select>
                         </div>
                         <label class="col-sm-2 col-form-label">Alamat</label>
                         <div class="col-sm-10">
-                          <input type="text" name="alamat" value="{{$editcustomer->alamat}}" class="form-control" placeholder="customer">
+                            <textarea name="alamat" id="alamat" cols="112" rows="4" required>
+                                {{$editcustomer->alamat}}
+                            </textarea>
                         </div>
                       </div>
-                      
+
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">

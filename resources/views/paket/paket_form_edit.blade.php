@@ -49,7 +49,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="card">       
+            <div class="card">
               <div class="card-body">
                 <div class="card card-info">
                   <div class="card-header">
@@ -58,24 +58,46 @@
                   <!-- /.card-header -->
                   <!-- form start -->
                   <form class="form-horizontal" action="{{'/paket/'. $editpaket->id_paket}}" method="post">
-                    @csrf 
+                    @csrf
                     @method('PUT')
                     <div class="card-body">
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Nama Paket</label>
                         <div class="col-sm-10 mb-5">
-                          <input type="text" name="nama_paket" value="{{$editpaket->nama_paket}}" class="form-control" placeholder="Paket">
+                          <input type="text" name="nama_paket" value="{{$editpaket->nama_paket}}" class="form-control" placeholder="Paket" required>
                         </div>
                         <label class="col-sm-2 col-form-label">Harga Paket</label>
                         <div class="col-sm-10 mb-5">
-                          <input type="text" name="harga_paket" value="{{$editpaket->harga_paket}}" class="form-control" placeholder="Paket">
+                          <input type="text" name="harga_paket" value="{{$editpaket->harga_paket}}" class="form-control" placeholder="Paket" required>
                         </div>
-                        <label class="col-sm-2 col-form-label">Jenis paket</label>
-                        <div class="col-sm-10">
-                          <input type="text" name="jenis_paket" value="{{$editpaket->jenis_paket}}" class="form-control" placeholder="Paket">
+                        <label class="col-sm-2 col-form-label">Jenis Paket</label>
+                        <div class="col-sm-10 mb-5">
+                            <select class="form-control select2" style="width: 100%;" name="jenis_paket" id="jenis_paket" required>
+                                @if ($editpaket->jenis_paket=='Satuan')
+                                    <option selected="selected" value="Satuan">Satuan</option>
+                                    <option value="Kiloan Reguler">Kiloan Reguler</option>
+                                    <option value="Kiloan Kilat">Kiloan Kilat</option>
+                                    <option value="Kiloan Express">Kiloan Express</option>
+                                @elseif ($editpaket->jenis_paket=='Kiloan Reguler')
+                                    <option selected="selected" value="Kiloan Reguler">Kiloan Reguler</option>
+                                    <option value="Satuan">Satuan</option>
+                                    <option value="Kiloan Kilat">Kiloan Kilat</option>
+                                    <option value="Kiloan Express">Kiloan Express</option>
+                                @elseif ($editpaket->jenis_paket=='Kiloan Kilat')
+                                    <option selected="selected" value="Kiloan Kilat">Kiloan Kilat</option>
+                                    <option value="Satuan">Satuan</option>
+                                    <option value="Kiloan Reguler">Kiloan Reguler</option>
+                                    <option value="Kiloan Express">Kiloan Express</option>
+                                @elseif ($editpaket->jenis_paket=='Kiloan Express')
+                                    <option selected="selected" value="Kiloan Express">Kiloan Express</option>
+                                    <option value="Satuan">Satuan</option>
+                                    <option value="Kiloan Reguler">Kiloan Reguler</option>
+                                    <option value="Kiloan Kilat">Kiloan Kilat</option>
+                                @endif
+                            </select>
                         </div>
                       </div>
-                      
+
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">

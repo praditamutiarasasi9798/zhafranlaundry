@@ -45,25 +45,13 @@
           <li class="nav-item">
             <a href="/customer" class="nav-link">
             <i class="nav-icon far fa-plus-square"></i>
-            <p>
-                Tambah Customer
-              </p>
+            <p>Customer</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="/tambahtransaksi" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
-              <p>
-                Tambah Transaksi
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
-            <i class="nav-icon fas fa-file"></i>
-              <p>
-                Transaksi
-              </p>
+              <p>Transaksi</p>
             </a>
           </li>
           <li class="nav-item">
@@ -75,12 +63,6 @@
 
               </p>
             </a>
-            <li class="nav-item">
-              <a href="pages/mailbox/mailbox.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Outlet</p>
-              </a>
-            </li>
             <li class="nav-item">
               <a href="/jabatan" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>

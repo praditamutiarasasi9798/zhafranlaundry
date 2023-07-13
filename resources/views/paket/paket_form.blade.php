@@ -49,7 +49,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="card">       
+            <div class="card">
               <div class="card-body">
                 <div class="card card-info">
                   <div class="card-header">
@@ -58,23 +58,29 @@
                   <!-- /.card-header -->
                   <!-- form start -->
                   <form class="form-horizontal" action="/paket" method="post">
-                    @csrf 
+                    @csrf
                     <div class="card-body">
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">Nama Paket</label>
                         <div class="col-sm-10 mb-5">
-                          <input type="text" name="nama_paket" class="form-control" placeholder="Nama Paket">
+                          <input type="text" name="nama_paket" class="form-control" placeholder="Nama Paket" required>
                         </div>
                         <label class="col-sm-2 col-form-label">Harga Paket</label>
                         <div class="col-sm-10 mb-5">
-                          <input type="text" name="harga_paket" class="form-control" placeholder="Harga Paket">
+                          <input type="text" name="harga_paket" class="form-control" placeholder="Harga Paket" required>
                         </div>
                         <label class="col-sm-2 col-form-label">Jenis Paket</label>
                         <div class="col-sm-10">
-                          <input type="text" name="jenis_paket" class="form-control" placeholder="Jenis Paket">
+                            <select class="form-control select2" style="width: 100%;" name="jenis_paket" id="jenis_paket" required>
+                                <option selected="selected">Jenis Paket</option>
+                                <option value="Satuan">Satuan</option>
+                                <option value="Kiloan Kilat">Kiloan Kilat</option>
+                                <option value="Kiloan Express">Kiloan Express</option>
+                                <option value="Kiloan Reguler">Kiloan Reguler</option>
+                            </select>
                         </div>
                       </div>
-                      
+
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
