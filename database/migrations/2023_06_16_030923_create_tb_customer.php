@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('id_customer');
             $table->string('nama_customer');
             $table->string('telepon');
-            $table->string('jk');            
+            $table->string('jk');
             $table->text('alamat');
             $table->timestamps();
         });

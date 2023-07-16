@@ -55,7 +55,7 @@
                   <div class="card-header">
                     <h3 class="card-title">DataTable with default features</h3>
                           <br>
-                          <a href="">
+                          <a href="{{route('tambahtransaksi.create')}}">
                               <button type="button" class="btn btn-block btn-primary col-2"> + Tambah Data</button>
                           </a>
                   </div>

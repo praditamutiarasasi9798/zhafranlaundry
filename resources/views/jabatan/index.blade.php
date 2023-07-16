@@ -62,7 +62,7 @@
 					</thead>
 					<tbody>
 						<?php $i = 1; ?>
-						@php ($jabatan as $dj):
+						@foreach ($jabatan as $dj):
                         <tr>
                             <td><?= $i++; ?></td>
                             <td><?= $dj['nama_jabatan']; ?></td>
@@ -101,8 +101,7 @@
                             </form>
                           </div>
                         </div>
-                        @endphp 
-
+                        @endforeach
 					</tbody>
 				</table>
 			</div>
