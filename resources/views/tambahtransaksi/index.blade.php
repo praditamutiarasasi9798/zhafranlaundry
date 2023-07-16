@@ -53,7 +53,7 @@
 
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title">DataTable with default features</h3>
+                    
                           <br>
                           <a href="{{route('tambahtransaksi.create')}}">
                               <button type="button" class="btn btn-block btn-primary col-2"> + Tambah Data</button>
@@ -63,6 +63,9 @@
                   <div class="card-body">
                     <table id="example1" class="table table-bordered table-striped">
                       <thead>
+                        {{-- @php
+                        $no = 1;
+                        @endphp --}}
                       <tr>
                         <th>No</th>
                         <th>Kode Invoice</th>
@@ -78,7 +81,7 @@
                       <tbody>
 
                       <tr>
-                        <td>Other browsers</td>
+                        <td>nomorr</td>
                         <td>All others</td>
                         <td>-</td>
                         <td>-</td>
