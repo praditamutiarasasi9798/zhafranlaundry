@@ -31,7 +31,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>FORM Transaski   </h1>
+            <h1>FORM Transaksi   </h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -74,7 +74,7 @@
                         <div class="col-sm-10 mb-5">
                           <input type="text" name="batas_waktu" class="form-control" placeholder="jam atau hari" required>
                         </div>
-                        <label class="col-sm-2 col-form-label">Status Pemabyaran</label>
+                        <label class="col-sm-2 col-form-label">Status Pembayaran</label>
                         <div class="col-sm-10 mb-5">
                             <select class="form-control select2" style="width: 100%;" name="status_transaksi" id="status_transaksi" required>
                               <option selected="selected"></option>
