@@ -6,6 +6,8 @@ use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\PaketController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TbhTransaksiController;
+use App\Http\Controllers\DetTransaksiController;
+use App\Http\Controllers\PembayaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +42,10 @@ Route::resource('/paket', PaketController::class );
 Route::resource('/customer', CustomerController::class);
 
 Route::resource('/tambahtransaksi' , TbhTransaksiController::class);
+
+Route::resource('', DetTransaksiController::class);
+
+Route::resource('/', PembayaranController::class);
 
 
 require __DIR__.'/auth.php';
