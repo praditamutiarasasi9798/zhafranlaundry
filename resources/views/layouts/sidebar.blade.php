@@ -55,27 +55,29 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/jabatan" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Jabatan</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/paket" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
-              <p>
+              <p>Paket</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            {{-- <a href="#" class="nav-link"> --}}
+              {{-- <i class="nav-icon far fa-envelope"></i> --}}
+              {{-- <p>
                 Manajemen Data
                 <i class="fas fa-angle-left right"></i>
 
-              </p>
-            </a>
-            <li class="nav-item">
-              <a href="/jabatan" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Jabatan</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/paket" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Paket</p>
-              </a>
-            </li>
-            <li class="nav-item">
+              </p> --}}
+            {{-- </a> --}}
+            
+            
+          <li class="nav-item">
             <a href="pages/kanban.html" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>
@@ -83,4 +85,5 @@
               </p>
             </a>
           </li>
+
         </aside>

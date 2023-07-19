@@ -31,7 +31,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>FORM JABATAN   </h1>
+            <h1>FORM TAMBAH JABATAN   </h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -53,7 +53,7 @@
               <div class="card-body">
                 <div class="card card-info">
                   <div class="card-header">
-                    <h3 class="card-title">Horizontal Form</h3>
+                    {{-- <h3 class="card-title">Horizontal Form</h3> --}}
                   </div>
                   <!-- /.card-header -->
                   <!-- form start -->
